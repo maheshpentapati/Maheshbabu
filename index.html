@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mahesh Babu Pentapati — SOC Analyst &amp; Detection Engineer</title>
+
+  <meta name="description" content="Senior SOC Analyst and Detection Engineer specialising in FortiSIEM, FortiSOAR, QRadar, threat hunting, and incident response for BFSI and enterprise environments."/>
+  <meta name="author" content="Mahesh Babu Pentapati"/>
+  <link rel="canonical" href="https://maheshpentapati.github.io/"/>
+
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="Mahesh Babu Pentapati — SOC Analyst"/>
+  <meta property="og:description" content="Senior SOC Analyst specialising in detection engineering, threat hunting, and incident response."/>
+  <meta property="og:url" content="https://maheshpentapati.github.io/"/>
+  <meta property="og:image" content="https://maheshpentapati.github.io/assets/og-card.png"/>
+  <meta name="theme-color" content="#0a0e0c"/>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="alternate icon" href="assets/favicon.ico"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Binary decorations (fixed, ambient) -->
+  <div class="ambient" aria-hidden="true">
+    <div class="scanline"></div>
+    <div class="binary-col bc-left">
+      <span>01101101</span><span>01100001</span><span>01101000</span><span>01100101</span>
+      <span>01110011</span><span>01101000</span><span>00100000</span><span>01110000</span>
+      <span>01100101</span><span>01101110</span><span>01110100</span><span>01100001</span>
+      <span>01110000</span><span>01100001</span><span>01110100</span><span>01101001</span>
+      <span>01010011</span><span>01001111</span><span>01000011</span><span>00100000</span>
+      <span>01000001</span><span>01001110</span><span>01000001</span><span>01001100</span>
+    </div>
+    <div class="binary-col bc-right">
+      <span>4D 41 48 45</span><span>53 48 20 42</span><span>41 42 55 20</span>
+      <span>53 4F 43 20</span><span>41 4E 41 4C</span><span>59 53 54 20</span>
+      <span>44 45 54 45</span><span>43 54 49 4F</span><span>4E 20 45 4E</span>
+      <span>47 49 4E 45</span><span>45 52 20 20</span><span>46 4F 52 54</span>
+      <span>49 53 49 45</span><span>4D 20 46 4F</span><span>52 54 49 53</span>
+      <span>4F 41 52 20</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-bracket">[</span>
+        <span class="brand-text">mahesh<span class="brand-op">@</span>soc</span>
+        <span class="brand-bracket">]</span>
+        <span class="brand-caret">_</span>
+      </a>
+      <nav class="primary-nav" id="nav">
+        <a href="#about"><span class="num">01</span> about</a>
+        <a href="#stats"><span class="num">02</span> stats</a>
+        <a href="#hunt"><span class="num">03</span> ops</a>
+        <a href="#work"><span class="num">04</span> work</a>
+        <a href="#rule"><span class="num">05</span> sample</a>
+        <a href="#experience"><span class="num">06</span> career</a>
+        <a href="#skills"><span class="num">07</span> skills</a>
+        <a href="#terminal"><span class="num">08</span> shell</a>
+        <a href="#contact"><span class="num">09</span> contact</a>
+      </nav>
+      <div class="header-right">
+        <span class="status">
+          <span class="status-dot"></span>
+          ONLINE
+        </span>
+        <a href="assets/resume.pdf" class="header-cta" download>
+          <span>./resume.pdf</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="hero-prompt"><span class="sigil">$</span> whoami --verbose</p>
+        <h1 class="hero-name">
+          <span class="hero-typed" id="heroTyped"></span><span class="cursor-blink"></span>
+        </h1>
+        <p class="hero-role">
+          <span class="bracket">&gt;&gt;</span>
+          Senior SOC Analyst <span class="sep">·</span> Detection Engineer
+          <span class="bracket">&lt;&lt;</span>
+        </p>
+        <p class="hero-desc">
+          Three+ years defending the systems that carry trust. Detection engineering,
+          threat hunting, and incident response on <span class="tag">FortiSIEM</span>,
+          <span class="tag">FortiSOAR</span>, and <span class="tag">QRadar</span>
+          &mdash; for banking and enterprise clients at a CERT-In empanelled MSSP.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">
+            <span class="btn-sigil">&gt;</span>
+            view_projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="mailto:maheshbabu.soc7@gmail.com" class="btn btn-ghost">
+            <span class="btn-sigil">&gt;</span>
+            send_message
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="meta-k">// location</span> Surat, IN</span>
+          <span><span class="meta-k">// status</span> open to senior roles</span>
+          <span><span class="meta-k">// level</span> L3</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 01 · about</p>
+          <h2 class="section-title">~$ cat about.md</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I started in the SOC at <strong>Mastercard</strong>, triaging alerts on
+              IBM QRadar across a global enterprise footprint. Today I lead detection
+              engineering and incident response at <strong>TechOwl InfoSec</strong>
+              &mdash; a CERT-In empanelled MSSP and Expert-tier Fortinet partner
+              serving BFSI, enterprise, and government clients.
+            </p>
+            <p>
+              Most of my day is spent writing correlation rules, chasing down false
+              positives, building FortiSOAR playbooks that take rote work off the
+              analyst's plate, and running hypothesis-driven hunts across endpoint,
+              identity, and network telemetry.
+            </p>
+            <p class="pullout">
+              <span class="pullout-mark">&#x275D;</span>
+              I care about detections that hold up in production &mdash; not ones
+              that look clever in a slide deck.
+              <span class="pullout-mark">&#x275E;</span>
+            </p>
+          </div>
+
+          <aside class="about-card">
+            <div class="portrait-window">
+              <div class="card-head">
+                <span class="card-dot card-dot-r"></span>
+                <span class="card-dot card-dot-y"></span>
+                <span class="card-dot card-dot-g"></span>
+                <span class="card-title">~/profile.jpg</span>
+              </div>
+              <img class="about-img" src="assets/profile.jpg" alt="Mahesh Babu Pentapati" loading="lazy"/>
+            </div>
+            <div class="card-head card-head-divide">
+              <span class="card-dot card-dot-r"></span>
+              <span class="card-dot card-dot-y"></span>
+              <span class="card-dot card-dot-g"></span>
+              <span class="card-title">~/profile.yaml</span>
+            </div>
+            <dl class="about-facts">
+              <div><dt>name:</dt><dd>Mahesh Babu Pentapati</dd></div>
+              <div><dt>role:</dt><dd>Senior SOC Analyst (L3)</dd></div>
+              <div><dt>now:</dt><dd>TechOwl InfoSec</dd></div>
+              <div><dt>before:</dt><dd>Mastercard · 2022-2025</dd></div>
+              <div><dt>base:</dt><dd>Surat, IN</dd></div>
+              <div><dt>stack:</dt><dd>FortiSIEM · FortiSOAR · QRadar</dd></div>
+              <div><dt>writes:</dt><dd>Python · Regex · SQL</dd></div>
+              <div><dt>hunts_in:</dt><dd>Wireshark · Sysmon · AD logs</dd></div>
+              <div><dt>certs:</dt><dd>Fortinet FCA · NSE 1</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS (honest) ============ -->
+    <section id="stats" class="section section-stats">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 02 · stats</p>
+          <h2 class="section-title">~$ ./stats --honest</h2>
+          <p class="section-sub">Real numbers only. No embellishment.</p>
+        </header>
+
+        <div class="stats-grid">
+          <div class="stat-card" data-reveal>
+            <p class="stat-k">years_in_soc</p>
+            <p class="stat-v"><span data-count-to="3">0</span><span class="stat-plus">+</span></p>
+            <p class="stat-note">Mastercard &rarr; TechOwl</p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <p class="stat-k">current_level</p>
+            <p class="stat-v mono">L3</p>
+            <p class="stat-note">Senior SOC Analyst</p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <p class="stat-k">fortinet_certs</p>
+            <p class="stat-v"><span data-count-to="2">0</span></p>
+            <p class="stat-note">FCA &middot; NSE 1</p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <p class="stat-k">soc_coverage</p>
+            <p class="stat-v mono">24&times;7</p>
+            <p class="stat-note">multi-tenant MSSP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPERATIONS: SOC CONSOLE + HUNT ============ -->
+    <section id="hunt" class="section section-hunt">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 03 &middot; operations</p>
+          <h2 class="section-title">~$ ./soc-console --live</h2>
+          <p class="section-sub">Live SOC workbench with threat-hunting workflow. Representative alert categories and generic architecture &mdash; no client-specific data.</p>
+        </header>
+
+        <!-- SOC CONSOLE -->
+        <div class="soc-console" data-reveal>
+          <div class="console-bar">
+            <div class="cb-left">
+              <span class="cb-dot"></span>
+              <span class="cb-title">SOC_CONSOLE</span>
+              <span class="cb-sep">|</span>
+              <span class="cb-host">mahesh@soc:prod</span>
+            </div>
+            <div class="cb-center">
+              <span class="cb-time" id="liveClock">--:--:--</span>
+            </div>
+            <div class="cb-right">
+              <span class="cb-badge cb-demo">DEMO &middot; SIMULATED DATA</span>
+              <span class="cb-badge">L3 &middot; ON DUTY</span>
+              <span class="cb-badge cb-live">MONITORING</span>
+            </div>
+          </div>
+
+          <div class="kpi-row kpi-row-big">
+            <div class="kpi kpi-big">
+              <p class="kpi-label">threats_blocked</p>
+              <p class="kpi-value"><span data-count-to="2847" data-format="comma">0</span></p>
+              <p class="kpi-trend kt-up">&uarr; +14% &middot; 24h</p>
+            </div>
+            <div class="kpi kpi-big">
+              <p class="kpi-label">system_uptime</p>
+              <p class="kpi-value"><span data-count-to="9994" data-divide="100" data-suffix="%">0</span></p>
+              <p class="kpi-trend kt-ok">&#9650; NOMINAL</p>
+            </div>
+            <div class="kpi kpi-big">
+              <p class="kpi-label">open_alerts</p>
+              <p class="kpi-value"><span data-count-to="17">0</span></p>
+              <p class="kpi-trend kt-warn">&uarr; +4 last hour</p>
+            </div>
+            <div class="kpi kpi-big">
+              <p class="kpi-label">security_score</p>
+              <p class="kpi-value"><span data-count-to="87">0</span><span class="kpi-of">/100</span></p>
+              <p class="kpi-trend kt-ok">&#9650; +2 pts</p>
+            </div>
+          </div>
+
+          <!-- honest operational KPIs below the big counters -->
+          <div class="kpi-row kpi-row-sub">
+            <div class="kpi-sub"><span class="kps-k">siem_platforms:</span><span class="kps-v">FortiSIEM · FortiSOAR · QRadar · Splunk</span></div>
+            <div class="kpi-sub"><span class="kps-k">sla_p1_target:</span><span class="kps-v">&lt; 15m</span></div>
+            <div class="kpi-sub"><span class="kps-k">coverage:</span><span class="kps-v">24&times;7</span></div>
+            <div class="kpi-sub"><span class="kps-k">att&amp;ck_tactics:</span><span class="kps-v">10 / 14 active</span></div>
+          </div>
+
+          <div class="console-lower">
+            <div class="alert-stream">
+              <div class="as-head">
+                <span class="as-title">EVENT STREAM &middot; DEMO FEED</span>
+                <span class="hp-badge hp-live">ROLLING</span>
+              </div>
+              <div class="as-body" id="alertStream"></div>
+            </div>
+
+            <div class="tool-health">
+              <div class="as-head">
+                <span class="as-title">TOOL HEALTH</span>
+                <span class="hp-badge hp-live">ALL UP</span>
+              </div>
+              <div class="th-grid">
+                <div class="th-item"><span class="th-dot"></span>FortiSIEM</div>
+                <div class="th-item"><span class="th-dot"></span>FortiSOAR</div>
+                <div class="th-item"><span class="th-dot"></span>FortiGate</div>
+                <div class="th-item"><span class="th-dot"></span>WAF</div>
+                <div class="th-item"><span class="th-dot"></span>TV1 EDR</div>
+                <div class="th-item"><span class="th-dot"></span>AD Sync</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Threat severity + threat level gauge -->
+          <div class="console-lower console-lower-2">
+            <div class="threat-sev">
+              <div class="as-head">
+                <span class="as-title">THREAT SEVERITY &middot; LAST 24H (DEMO)</span>
+                <span class="hp-badge hp-live">TRACKING</span>
+              </div>
+              <div class="ts-body">
+                <div class="ts-row"><span class="ts-name">SQL Injection attempts</span><div class="ts-bar" data-bar="82" data-sev="high"><span></span></div><span class="ts-tag ts-high">HIGH</span></div>
+                <div class="ts-row"><span class="ts-name">Credential brute force</span><div class="ts-bar" data-bar="76" data-sev="high"><span></span></div><span class="ts-tag ts-high">HIGH</span></div>
+                <div class="ts-row"><span class="ts-name">DNS tunneling signals</span><div class="ts-bar" data-bar="54" data-sev="med"><span></span></div><span class="ts-tag ts-med">MED</span></div>
+                <div class="ts-row"><span class="ts-name">Phishing &amp; suspicious mail</span><div class="ts-bar" data-bar="61" data-sev="med"><span></span></div><span class="ts-tag ts-med">MED</span></div>
+                <div class="ts-row"><span class="ts-name">Endpoint policy violations</span><div class="ts-bar" data-bar="28" data-sev="low"><span></span></div><span class="ts-tag ts-low">LOW</span></div>
+                <div class="ts-row"><span class="ts-name">Lateral movement indicators</span><div class="ts-bar" data-bar="42" data-sev="med"><span></span></div><span class="ts-tag ts-med">MED</span></div>
+              </div>
+            </div>
+
+            <div class="threat-gauge">
+              <div class="as-head">
+                <span class="as-title">THREAT LEVEL</span>
+                <span class="hp-badge hp-live">LIVE</span>
+              </div>
+              <div class="tg-body">
+                <svg class="tg-svg" viewBox="0 0 200 130" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#4ade80"/>
+                      <stop offset="55%" stop-color="#fbbf24"/>
+                      <stop offset="100%" stop-color="#f87171"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="tg-track" d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke-width="12" stroke-linecap="round"/>
+                  <path class="tg-fill" d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/>
+                  <circle class="tg-tick" cx="20" cy="110" r="3"/>
+                  <circle class="tg-tick" cx="180" cy="110" r="3"/>
+                </svg>
+                <div class="tg-readout">
+                  <p class="tg-value"><span data-count-to="74">0</span><span class="tg-slash">/100</span></p>
+                  <p class="tg-label">ELEVATED</p>
+                </div>
+                <div class="tg-legend">
+                  <span class="tg-li tg-li-ok">0-30 LOW</span>
+                  <span class="tg-li tg-li-med">31-60 MOD</span>
+                  <span class="tg-li tg-li-hi">61-85 ELEV</span>
+                  <span class="tg-li tg-li-cr">86+ CRIT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-header before hunt grid -->
+        <div class="ops-subhead">
+          <p class="ops-sub-k">// active threat hunts</p>
+          <p class="ops-sub-t">~$ ./hunt.sh --active</p>
+        </div>
+
+        <div class="hunt-grid">
+
+          <!-- ATT&CK Coverage -->
+          <div class="hunt-panel hp-attack" data-reveal>
+            <div class="hp-head">
+              <span class="hp-title">MITRE ATT&amp;CK &middot; TACTIC COVERAGE</span>
+              <span class="hp-badge hp-live">LIVE</span>
+            </div>
+            <div class="hp-body">
+              <div class="attack-row"><span class="ar-name">reconnaissance</span><span class="coverage-dots" data-cov="2"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">initial_access</span><span class="coverage-dots" data-cov="4"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">execution</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">persistence</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">privilege_escalation</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">defense_evasion</span><span class="coverage-dots" data-cov="2"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">credential_access</span><span class="coverage-dots" data-cov="4"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">discovery</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">lateral_movement</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">collection</span><span class="coverage-dots" data-cov="2"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">command_and_control</span><span class="coverage-dots" data-cov="4"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">exfiltration</span><span class="coverage-dots" data-cov="3"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+              <div class="attack-row"><span class="ar-name">impact</span><span class="coverage-dots" data-cov="2"><span class="cd"></span><span class="cd"></span><span class="cd"></span><span class="cd"></span></span></div>
+            </div>
+            <div class="hp-foot">
+              <span class="hp-foot-k">legend:</span>
+              <span class="leg-item"><span class="cd filled"></span>detections in place</span>
+              <span class="leg-item"><span class="cd partial"></span>partial</span>
+              <span class="leg-item"><span class="cd"></span>hunting</span>
+            </div>
+          </div>
+
+          <!-- Active Hunt Hypotheses -->
+          <div class="hunt-panel hp-hunts" data-reveal>
+            <div class="hp-head">
+              <span class="hp-title">ACTIVE HUNT HYPOTHESES</span>
+              <span class="hp-badge">3 running</span>
+            </div>
+            <div class="hp-body">
+              <article class="hunt-item">
+                <span class="hunt-status hs-running">RUNNING</span>
+                <div class="hunt-body">
+                  <p class="hunt-title">DNS tunneling via high-entropy subdomains</p>
+                  <p class="hunt-meta"><code>T1071.004</code> &middot; Windows DNS &middot; entropy + burst analysis</p>
+                </div>
+              </article>
+              <article class="hunt-item">
+                <span class="hunt-status hs-running">RUNNING</span>
+                <div class="hunt-body">
+                  <p class="hunt-title">Lateral movement via WMI / WinRM abuse</p>
+                  <p class="hunt-meta"><code>T1021.006</code> &middot; Sysmon + AD &middot; process ancestry</p>
+                </div>
+              </article>
+              <article class="hunt-item">
+                <span class="hunt-status hs-running">RUNNING</span>
+                <div class="hunt-body">
+                  <p class="hunt-title">LSASS memory access for credential dumping</p>
+                  <p class="hunt-meta"><code>T1003.001</code> &middot; Sysmon 10 &middot; caller-image trust</p>
+                </div>
+              </article>
+              <article class="hunt-item">
+                <span class="hunt-status hs-queued">QUEUED</span>
+                <div class="hunt-body">
+                  <p class="hunt-title">Scheduled task persistence on non-admin hosts</p>
+                  <p class="hunt-meta"><code>T1053.005</code> &middot; Windows Event 4698 &middot; baseline deviation</p>
+                </div>
+              </article>
+              <article class="hunt-item">
+                <span class="hunt-status hs-done">DONE</span>
+                <div class="hunt-body">
+                  <p class="hunt-title">Password spraying against VPN / OWA edge</p>
+                  <p class="hunt-meta"><code>T1110.003</code> &middot; VPN + AD &middot; low-and-slow detection tuned</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Pipeline (full width) -->
+          <div class="hunt-panel hp-pipeline" data-reveal>
+            <div class="hp-head">
+              <span class="hp-title">DETECTION PIPELINE</span>
+              <span class="hp-badge hp-live">FLOWING</span>
+            </div>
+            <div class="hp-body pipeline-flow">
+              <div class="pipe-track"></div>
+              <div class="pipe-dot"></div>
+              <div class="pipe-stage"><span class="pipe-ico">&#x2317;</span><span class="pipe-label">LOGS</span></div>
+              <div class="pipe-stage"><span class="pipe-ico">{ }</span><span class="pipe-label">PARSE</span></div>
+              <div class="pipe-stage"><span class="pipe-ico">&#x29C9;</span><span class="pipe-label">CORRELATE</span></div>
+              <div class="pipe-stage"><span class="pipe-ico">&#x2721;</span><span class="pipe-label">ENRICH</span></div>
+              <div class="pipe-stage"><span class="pipe-ico">&#x25B8;</span><span class="pipe-label">SOAR</span></div>
+              <div class="pipe-stage"><span class="pipe-ico">&#x25CE;</span><span class="pipe-label">ANALYST</span></div>
+            </div>
+          </div>
+
+          <!-- Data Sources -->
+          <div class="hunt-panel hp-sources" data-reveal>
+            <div class="hp-head">
+              <span class="hp-title">DATA SOURCES &middot; INGESTING</span>
+              <span class="hp-badge hp-live">7/7</span>
+            </div>
+            <div class="hp-body">
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">windows_event_logs</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">sysmon</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">active_directory</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">fortigate_fw</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">waf_logs</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">trend_vision_one</span><span class="src-stat">ACTIVE</span></div>
+              <div class="source-row"><span class="src-dot"></span><span class="src-name">dns_query_logs</span><span class="src-stat">ACTIVE</span></div>
+            </div>
+          </div>
+
+          <!-- Hunt Queue -->
+          <div class="hunt-panel hp-queue" data-reveal>
+            <div class="hp-head">
+              <span class="hp-title">TECHNIQUES IN HUNT QUEUE</span>
+              <span class="hp-badge">queued</span>
+            </div>
+            <div class="hp-body">
+              <div class="q-item"><code>T1048.003</code><span class="q-name">exfiltration_over_unencrypted_protocol</span></div>
+              <div class="q-item"><code>T1218.011</code><span class="q-name">rundll32_signed_proxy_execution</span></div>
+              <div class="q-item"><code>T1574.010</code><span class="q-name">hijack_execution_flow_service_perms</span></div>
+              <div class="q-item"><code>T1562.001</code><span class="q-name">impair_defenses_disable_tools</span></div>
+              <div class="q-item"><code>T1566.001</code><span class="q-name">spearphishing_attachment</span></div>
+              <div class="q-item"><code>T1040</code><span class="q-name">network_sniffing_internal</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 04 · work</p>
+          <h2 class="section-title">~$ ls ./detections</h2>
+          <p class="section-sub">Selected projects &mdash; details redacted where client-sensitive.</p>
+        </header>
+
+        <div class="work-grid">
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[01]</span>
+              <span class="wc-type">rule.suite</span>
+            </header>
+            <h3 class="wc-title">SQL Injection detection suite</h3>
+            <p class="wc-desc">Layered regex detection for time-based blind, boolean-based, UNION, and obfuscated SQLi. Aggregation windows catch burst behaviour while suppressing scanner noise.</p>
+            <ul class="wc-tags"><li>FortiSIEM</li><li>WAF</li><li>T1190</li></ul>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[02]</span>
+              <span class="wc-type">hunt.windows</span>
+            </header>
+            <h3 class="wc-title">Windows DNS exfiltration hunt</h3>
+            <p class="wc-desc">Correlation of DNS query/response pairs (Event IDs 256/257/260/261) to surface pointer loops, NXDOMAIN bursts, and high-entropy subdomains indicative of tunnelling.</p>
+            <ul class="wc-tags"><li>Windows DNS</li><li>FortiSIEM</li><li>T1071.004</li></ul>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[03]</span>
+              <span class="wc-type">detection.identity</span>
+            </header>
+            <h3 class="wc-title">Credential abuse detection</h3>
+            <p class="wc-desc">Distributed brute-force, password spraying, impossible-travel, and credential stuffing detection across AD and VPN logs with lockout correlation to reduce noise.</p>
+            <ul class="wc-tags"><li>Active Directory</li><li>VPN logs</li><li>T1110</li></ul>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[04]</span>
+              <span class="wc-type">playbook.soar</span>
+            </header>
+            <h3 class="wc-title">FortiSOAR IR playbooks</h3>
+            <p class="wc-desc">End-to-end incident response playbooks for BFSI SOC: auto-enrichment (AbuseIPDB, VirusTotal), dynamic severity scoring, ITSM ticket creation, SLA tracking.</p>
+            <ul class="wc-tags"><li>FortiSOAR</li><li>Automation</li><li>ITSM</li></ul>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[05]</span>
+              <span class="wc-type">forensics.banking</span>
+            </header>
+            <h3 class="wc-title">Ransomware forensic investigation</h3>
+            <p class="wc-desc">Post-incident forensics for a banking client: Windows event log deep-dive, lateral-movement timeline, persistence identification, IOC extraction, CERT-In reporting.</p>
+            <ul class="wc-tags"><li>Forensics</li><li>Timeline</li><li>CERT-In</li></ul>
+          </article>
+
+          <article class="work-card" data-reveal>
+            <header class="wc-head">
+              <span class="wc-id">[06]</span>
+              <span class="wc-type">parser.schema</span>
+            </header>
+            <h3 class="wc-title">TV1 telemetry normalisation</h3>
+            <p class="wc-desc">Unified SIEM schema mapping for Trend Vision One EDR telemetry: field normalisation, event categorisation, and custom dashboards across multi-tenant FortiSIEM.</p>
+            <ul class="wc-tags"><li>TV1 EDR</li><li>Parser</li><li>Schema</li></ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAMPLE RULE ============ -->
+    <section id="rule" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 05 · sample</p>
+          <h2 class="section-title">~$ cat sample_rule.pseudo</h2>
+          <p class="section-sub">Illustrative pseudocode for a time-based blind SQLi detection. Not proprietary client content.</p>
+        </header>
+
+        <div class="code-window">
+          <div class="cw-head">
+            <span class="card-dot card-dot-r"></span>
+            <span class="card-dot card-dot-y"></span>
+            <span class="card-dot card-dot-g"></span>
+            <span class="cw-title">~/detections/sqli_time_blind.pseudo</span>
+          </div>
+          <pre class="cw-body"><span class="ln">01</span>  <span class="c1"># RULE: Time-Based Blind SQLi &mdash; aggregation + anti-evasion</span>
+<span class="ln">02</span>  <span class="c1"># MITRE ATT&amp;CK: T1190 &mdash; Exploit Public-Facing Application</span>
+<span class="ln">03</span>
+<span class="ln">04</span>  <span class="c2">rule</span> <span class="c3">"sqli_time_blind_v2"</span> {
+<span class="ln">05</span>    <span class="c2">source</span>   = waf_logs <span class="c4">|</span> apache_access
+<span class="ln">06</span>    <span class="c2">trigger</span>  = request.query <span class="c2">matches</span>
+<span class="ln">07</span>               <span class="c3">/(SLEEP|BENCHMARK|WAITFOR\s+DELAY|pg_sleep)\s*\(/i</span>
+<span class="ln">08</span>    <span class="c2">where</span>    = response.time_ms <span class="c4">&gt;</span> <span class="c5">1500</span>
+<span class="ln">09</span>    <span class="c2">aggregate</span> = <span class="c5">3</span> events <span class="c4">/</span> <span class="c5">60</span>s <span class="c4">/</span> source_ip
+<span class="ln">10</span>    <span class="c2">suppress</span>  = known_scanners <span class="c4">|</span> health_checks
+<span class="ln">11</span>    <span class="c2">severity</span> = <span class="c6">HIGH</span>
+<span class="ln">12</span>    <span class="c2">notify</span>   = soar.playbook(<span class="c3">"sqli_response_v3"</span>)
+<span class="ln">13</span>  }
+<span class="ln">14</span>
+<span class="ln">15</span>  <span class="c1"># False-positive guard: many WAFs fingerprint themselves in UA.</span>
+<span class="ln">16</span>  <span class="c1"># Chain with contextual asset criticality before paging L3.</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 06 · career</p>
+          <h2 class="section-title">~$ git log --career</h2>
+        </header>
+
+        <div class="timeline">
+
+          <article class="tl-row tl-current" data-reveal>
+            <div class="tl-meta">
+              <p class="tl-hash">commit a8f3c1d <span class="tl-tag">HEAD</span></p>
+              <p class="tl-date">Date: Jun 2025 &mdash; Present</p>
+              <p class="tl-loc">Surat, IN</p>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Senior SOC Analyst <span class="tl-level">L3</span></h3>
+              <p class="tl-org">TechOwl InfoSec Pvt. Ltd. &middot; CERT-In empanelled MSSP, Fortinet Expert Partner</p>
+              <ul class="tl-bullets">
+                <li>Lead detection engineering, threat hunting, and IR across a 24×7 multi-tenant SOC serving BFSI and enterprise clients.</li>
+                <li>Author and tune FortiSIEM correlation rules and custom parsers; focus on FP reduction, threshold/aggregation logic, anti-evasion patterns mapped to MITRE ATT&amp;CK.</li>
+                <li>Build FortiSOAR playbooks for enrichment, ITSM ticketing, severity scoring, and orchestration.</li>
+                <li>Onboard and normalise log sources: FortiGate, Windows, AD, WAF, Trend Vision One EDR.</li>
+                <li>Produce RBI/CERT-In compliance documentation. Mentor L1/L2 analysts.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-row" data-reveal>
+            <div class="tl-meta">
+              <p class="tl-hash">commit 2c7e4b9</p>
+              <p class="tl-date">Date: Sep 2022 &mdash; Jun 2025</p>
+              <p class="tl-loc">Pune, IN</p>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">SOC Analyst <span class="tl-level">L1</span></h3>
+              <p class="tl-org">Mastercard</p>
+              <ul class="tl-bullets">
+                <li>Monitored global infrastructure on IBM QRadar — triaged alerts across network, endpoint, and identity sources.</li>
+                <li>Tuned correlation rules and offense management to cut FP volume and improve analyst throughput.</li>
+                <li>Investigated phishing, brute-force, suspicious authentication, and policy violations across enterprise environments.</li>
+                <li>Performed packet-level analysis with Wireshark for deep-dive network investigations during IR.</li>
+                <li>Contributed detection gaps and new use cases mapped to MITRE ATT&amp;CK.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 07 · skills</p>
+          <h2 class="section-title">~$ tree ./toolkit</h2>
+          <p class="section-sub">Grouped honestly. No percentage bars &mdash; percentages on portfolios are meaningless.</p>
+        </header>
+
+        <div class="skill-groups">
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">├─</span> siem_soar/</h3>
+            <ul>
+              <li>FortiSIEM</li><li>FortiSOAR</li><li>IBM QRadar</li><li>Splunk</li>
+              <li>correlation_rules</li><li>custom_parsers</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">├─</span> blue_team/</h3>
+            <ul>
+              <li>threat_hunting</li><li>incident_response</li><li>digital_forensics</li>
+              <li>log_analysis</li><li>alert_triage</li><li>rca_reporting</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">├─</span> frameworks/</h3>
+            <ul>
+              <li>mitre_att&amp;ck</li><li>cyber_kill_chain</li><li>nist_csf</li><li>owasp_top_10</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">├─</span> network/</h3>
+            <ul>
+              <li>wireshark</li><li>tcp_ip</li><li>dns_dhcp</li><li>fortigate</li><li>waf_logs</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">├─</span> endpoint_identity/</h3>
+            <ul>
+              <li>windows_event_logs</li><li>active_directory</li><li>trend_vision_one</li>
+              <li>sysmon</li><li>powershell_logging</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3><span class="sg-sigil">└─</span> scripting/</h3>
+            <ul>
+              <li>python</li><li>regex</li><li>bash</li><li>sql</li><li>rest_apis</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="cert-row">
+          <p class="cert-label">// certifications</p>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-badge">FCA</span>
+              <div>
+                <p class="cert-name">Fortinet Certified Associate in Cybersecurity</p>
+                <p class="cert-sub">Issued Jul 2025 &middot; Expires Jul 2027 &middot; ID 2072677544MP</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">NSE1</span>
+              <div>
+                <p class="cert-name">NSE Level 1 — Certified Associate</p>
+                <p class="cert-sub">Fortinet Network Security Expert Program &middot; Jul 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ TERMINAL ============ -->
+    <section id="terminal" class="section section-terminal">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">// 08 · shell</p>
+          <h2 class="section-title">~$ bash interactive.sh</h2>
+          <p class="section-sub">Type <code>help</code> to see commands. Try: <code>whoami</code>, <code>about</code>, <code>skills</code>, <code>projects</code>, <code>contact</code>, <code>clear</code>.</p>
+        </header>
+
+        <div class="terminal" id="term">
+          <div class="term-head">
+            <span class="card-dot card-dot-r"></span>
+            <span class="card-dot card-dot-y"></span>
+            <span class="card-dot card-dot-g"></span>
+            <span class="term-title">mahesh@soc:~$</span>
+          </div>
+          <div class="term-body" id="termBody">
+            <p class="term-line term-out">Welcome to Mahesh Babu Pentapati's interactive terminal.</p>
+            <p class="term-line term-out">Type <span class="term-hl">help</span> for a list of commands.</p>
+            <p class="term-line term-out">&nbsp;</p>
+          </div>
+          <div class="term-prompt">
+            <span class="term-ps1">mahesh@soc:~$</span>
+            <input type="text" class="term-input" id="termInput" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal input"/>
+            <span class="term-cursor"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <p class="kicker">// 09 · contact</p>
+        <h2 class="contact-title">~$ echo <span class="accent">"let's talk"</span></h2>
+        <p class="contact-body">
+          Open to senior SOC and detection engineering roles &mdash; full-time, India
+          remote or on-site. Best reached by email; I usually respond within a
+          business day.
+        </p>
+
+        <a href="mailto:maheshbabu.soc7@gmail.com" class="btn btn-primary btn-lg">
+          <span class="btn-sigil">&gt;</span>
+          maheshbabu.soc7@gmail.com
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/mahesh-babu-pentapati-soc" target="_blank" rel="noopener">[linkedin] mahesh-babu-pentapati-soc <span>&#x2197;</span></a></li>
+          <li><a href="https://github.com/maheshpentapati" target="_blank" rel="noopener">[github] maheshpentapati <span>&#x2197;</span></a></li>
+          <li><a href="tel:+917670866926">[phone] +91 76708 66926 <span>&#x2197;</span></a></li>
+          <li><a href="assets/resume.pdf" download>[resume] resume.pdf <span>&darr;</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mahesh Babu Pentapati &middot; built in Surat, IN</p>
+      <p class="footer-mono">
+        v5 &middot; <a href="https://github.com/maheshpentapati/maheshpentapati.github.io" target="_blank" rel="noopener">source on github</a>
+        &middot; <span class="status-dot-sm"></span> all systems nominal
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
